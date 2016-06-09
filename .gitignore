@@ -7,5 +7,5 @@
 .DS_Store
 .trash/
 
-app/**/.DS_Store
+app
 
