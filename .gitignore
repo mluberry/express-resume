@@ -1,0 +1,11 @@
+*~
+\#*\#
+*.swp
+*.dump
+*.log
+*.local
+.DS_Store
+.trash/
+
+app/**/.DS_Store
+
