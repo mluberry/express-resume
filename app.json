@@ -1,0 +1,8 @@
+{
+  "name": "express-resume",
+  "description": "",
+  "image": "heroku/nodejs",
+  "repository": "https://github.com/mongolab/hello-mongoose.git",
+  "keywords": ["node", "mongoose", "ODM"],
+  "addons": ["mongolab"]
+}
