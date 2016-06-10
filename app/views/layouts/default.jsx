@@ -1,6 +1,8 @@
+require('rootpath')();
+
 var React = require('react');
 
-var Footer = require('./footer');
+var Footer = require('views/footer');
 
 var DefaultLayout = React.createClass({
   render: function() {
@@ -45,13 +47,9 @@ var DefaultLayout = React.createClass({
           `}} />
         </head>
         <body id="top" class="default">
-          <!-- Start: Content -->
           {this.props.children}
-        	<!-- End: Content -->
 
-        	<!-- Start: Footer -->
           <Footer />
-        	<!-- End: Footer -->
         </body>
       </html>
     );

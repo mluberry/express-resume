@@ -1,12 +1,14 @@
+require('rootpath')();
+
 var React = require('react');
-var DefaultLayout = require('./layouts/default');
+var DefaultLayout = require('views/layouts/default');
 
 var IndexContent = React.createClass({
   render: function() {
     return (
       <DefaultLayout title={this.props.title}>
         <div id="resume">
-          <!-- Start: Social media -->
+          {/* Start: Social media */}
           <div id="social_media">
             <ul>
               <li><a href="#" title="Blog">Blog</a></li>
@@ -19,9 +21,9 @@ var IndexContent = React.createClass({
               <li><a href="#" title="Skype">Skype</a></li>
             </ul>
           </div>
-          <!-- End: Social media -->
+          {/* End: Social media */}
 
-          <!-- Start: Header section -->
+          {/* Start: Header section */}
           <div class="section head_section">
             <div class="section_content">
               <div class="my_info">
@@ -49,9 +51,9 @@ var IndexContent = React.createClass({
               </div>
             </div>
           </div>
-          <!-- End: Header section -->
+          {/* End: Header section */}
 
-          <!-- Start: Navigation -->
+          {/* Start: Navigation */}
           <div id="nav">
             <ul>
               <li><a href="#section1" title="Who is Nathan McMillan?">About</a></li>
@@ -63,9 +65,9 @@ var IndexContent = React.createClass({
               <li><a href="#footer" title="Contact me">Contact</a></li>
             </ul>
           </div>
-          <!-- End: Navigation -->
+          {/* End: Navigation */}
 
-          <!-- Start: Section -->
+          {/* Start: Section */}
           <div class="section" id="section1">
             <h2 class="section_title">Who is Nathan McMillan?</h2>
             <div class="section_content">
@@ -74,9 +76,9 @@ var IndexContent = React.createClass({
             </div>
             <div class="section_footer"><a href="#top" class="go_top">Back to top</a></div>
           </div>
-          <!-- End: Section -->
+          {/* End: Section */}
 
-          <!-- Start: Section -->
+          {/* Start: Section */}
           <div class="section" id="section2">
             <h2 class="section_title">Skills &amp; Knowledge (V.1)</h2>
             <div class="section_content">
@@ -102,9 +104,9 @@ var IndexContent = React.createClass({
             </div>
             <div class="section_footer"><a href="#top" class="go_top">Back to top</a></div>
           </div>
-          <!-- End: Section -->
+          {/* End: Section */}
 
-          <!-- Start: Section -->
+          {/* Start: Section */}
           <div class="section" id="section3">
             <h2 class="section_title">Skills &amp; Knowledge (V.2)</h2>
             <div class="section_content">
@@ -174,9 +176,9 @@ var IndexContent = React.createClass({
             </div>
             <div class="section_footer"><a href="#top" class="go_top">Back to top</a></div>
           </div>
-          <!-- End: Section -->
+          {/* End: Section */}
 
-          <!-- Start: Section -->
+          {/* Start: Section */}
           <div class="section" id="section4">
             <h2 class="section_title">Work Experience</h2>
             <div class="section_content">
@@ -225,9 +227,9 @@ var IndexContent = React.createClass({
             </div>
             <div class="section_footer"><a href="#top" class="go_top">Back to top</a></div>
           </div>
-          <!-- End: Section -->
+          {/* End: Section */}
 
-          <!-- Start: Section -->
+          {/* Start: Section */}
           <div class="section" id="section5">
             <h2 class="section_title">Education</h2>
             <div class="section_content">
@@ -246,12 +248,12 @@ var IndexContent = React.createClass({
               </div>
             </div>
             <div class="section_footer">
-              <a href="#top" class="go_top">Back to top</a>  
+              <a href="#top" class="go_top">Back to top</a>
             </div>
           </div>
-          <!-- End: Section -->
+          {/* End: Section */}
 
-          <!-- Start: Section -->
+          {/* Start: Section */}
           <div class="section" id="section6">
             <h2 class="section_title">Portfolio</h2>
             <div class="section_content">
@@ -268,9 +270,9 @@ var IndexContent = React.createClass({
             </div>
             <div class="section_footer"><a href="#top" class="go_top">Back to top</a></div>
           </div>
-          <!-- End: Section -->
+          {/* End: Section */}
 
-          <div class="clear"></div> <!-- Do not remove -->
+          <div class="clear"></div> {/* Do not remove */}
         </div>
       </DefaultLayout>
     );
