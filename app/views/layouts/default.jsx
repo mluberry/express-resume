@@ -16,40 +16,42 @@ var DefaultLayout = React.createClass({
         	<link  href="http://fonts.googleapis.com/css?family=Puritan:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" />
         	<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
         	<script src="http://code.jquery.com/jquery-migrate-1.0.0.js" type="text/javascript"></script>
-        	<script src="lib/js/jquery.form.js" type="text/javascript"></script>
-        	<script src="lib/js/jquery.validate.min.js" type="text/javascript"></script>
         	<script src="lib/js/jquery.custom.minimalme.js" type="text/javascript"></script>
         	<link rel="stylesheet" type="text/css" href="lib/js/tipsy/stylesheets/tipsy.css" />
         	<script type="text/javascript" src="lib/js/tipsy/javascripts/jquery.tipsy.js"></script>
           <script dangerouslySetInnerHTML={{__html: `
-          	jQuery(document).ready(function($){
-          		$('#social_media a').tipsy({gravity: 's', opacity: 0.9, fade: true});
-          		$('#nav a').tipsy({gravity: 's', opacity: 0.9, fade: true});
-          		$('.cv_options a').tipsy({gravity: 's', opacity: 0.9, fade: true});
-          	});
+            jQuery(document).ready(function($){
+              $('#social_media a').tipsy({gravity: 's', opacity: 0.9, fade: true});
+              $('#nav a').tipsy({gravity: 's', opacity: 0.9, fade: true});
+              $('.cv_options a').tipsy({gravity: 's', opacity: 0.9, fade: true});
+            });
           `}} />
-
         	<link rel="stylesheet" type="text/css" href="lib/js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
         	<script type="text/javascript" src="lib/js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
         	<script type="text/javascript" src="lib/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
           <script dangerouslySetInnerHTML={{__html: `
             jQuery(document).ready(function($){
-          		$(".portfolio a").fancybox({
-          			'padding'			: 10,
-          			'titlePosition' 	: 'over',
-          			'titleFormat'       : function(title, currentArray, currentIndex, currentOpts) { return '<span id="fancybox-title-over"><strong>' +  (currentIndex + 1) + ' / ' + currentArray.length + '</strong> ' + title + '</span>'; },
-          			'transitionIn'		: 'fade',
-          			'transitionOut'		: 'fade',
-          			'overlayColor'		: '#000',
-          			'overlayOpacity'	: 0.8
-          		});
-          	});
+              $(".portfolio a").fancybox({
+                'padding'			: 10,
+                'titlePosition' 	: 'over',
+                'titleFormat'       : function(title, currentArray, currentIndex, currentOpts) { return '<span id="fancybox-title-over"><strong>' +  (currentIndex + 1) + ' / ' + currentArray.length + '</strong> ' + title + '</span>'; },
+                'transitionIn'		: 'fade',
+                'transitionOut'		: 'fade',
+                'overlayColor'		: '#000',
+                'overlayOpacity'	: 0.8
+              });
+            });
           `}} />
         </head>
-        <body id="top" class="default">
+        <body id="top" className="default">
           {this.props.children}
 
           <Footer />
+
+        	{/* Twitter Stream JavaScript */}
+        	<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+        	<script type="text/javascript" src="https://api.twitter.com/1/statuses/user_timeline.json?screen_name=Blogsessive&callback=twitterCallback2&count=5"></script>
+        	{/* In the line above, replace "Blogsessive.json" with your own "username.json" to pull your latest personal tweets */}
         </body>
       </html>
     );
