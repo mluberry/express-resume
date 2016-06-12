@@ -1,7 +1,12 @@
 require('rootpath')();
 
 var React = require('react');
+
 var DefaultLayout = require('views/layouts/default');
+var ExperienceSection = require('views/Experience');
+var EducationSection = require('views/education');
+var PortfolioSection = require('views/portfolio');
+var SkillsSection = require('views/skills');
 
 var IndexContent = React.createClass({
   render: function() {
@@ -65,200 +70,12 @@ var IndexContent = React.createClass({
           </div>
           {/* End: Section */}
 
-          {/* Start: Section */}
-          <div className="section" id="section2">
-            <h2 className="section_title">Skills &amp; Knowledge (V.1)</h2>
-            <div className="section_content">
-              <div className="two_thirds"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p><p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p></div>
-              <div className="one_third last_column">
-                <div className="skill">
-                  <h4>Adobe Photoshop</h4>
-                  <div className="skillbar"><div className="skillbarfill skill100">Excellent</div></div>
-                </div>
-                <div className="skill">
-                  <h4>Adobe Illustrator</h4>
-                  <div className="skillbar"><div className="skillbarfill skill80">Good</div></div>
-                </div>
-                <div className="skill">
-                  <h4>XHTML / CSS</h4>
-                  <div className="skillbar"><div className="skillbarfill skill90">Excellent</div></div>
-                </div>
-                <div className="skill">
-                  <h4>jQuery</h4>
-                  <div className="skillbar"><div className="skillbarfill skill80">Good</div></div>
-                </div>
-              </div>
-            </div>
-            <div className="section_footer"><a href="#top" className="go_top">Back to top</a></div>
-          </div>
-          {/* End: Section */}
+          <SkillsSection />
+          <ExperienceSection />
+          <EducationSection />
+          <PortfolioSection />
 
-          {/* Start: Section */}
-          <div className="section" id="section3">
-            <h2 className="section_title">Skills &amp; Knowledge (V.2)</h2>
-            <div className="section_content">
-              <p>If the above style doesn't suit you, you could always find a different approach, like below:</p>
-
-              <div className="text_ruler"><span>Graphic Skills</span></div>
-
-              <div className="one_fourth">
-                <div className="skill">
-                  <h4>Adobe Photoshop</h4>
-                  <div className="skillbar"><div className="skillbarfill skill100">Excellent</div></div>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-              </div>
-              <div className="one_fourth">
-                <div className="skill">
-                  <h4>Adobe Illustrator</h4>
-                  <div className="skillbar"><div className="skillbarfill skill60">Good</div></div>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-              </div>
-              <div className="one_fourth">
-                <div className="skill">
-                  <h4>Adobe InDesign</h4>
-                  <div className="skillbar"><div className="skillbarfill skill90">Excellent</div></div>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-              </div>
-              <div className="one_fourth last_column">
-                <div className="skill">
-                  <h4>Adobe Fireworks</h4>
-                  <div className="skillbar"><div className="skillbarfill skill70">Good</div></div>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-              </div>
-
-              <div className="text_ruler"><span>Coding Skills</span></div>
-
-              <div className="one_fourth">
-                <div className="skill">
-                  <h4>XHTML / CSS</h4>
-                  <div className="skillbar"><div className="skillbarfill skill100">Excellent</div></div>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-              </div>
-              <div className="one_fourth">
-                <div className="skill">
-                  <h4>jQuery</h4>
-                  <div className="skillbar"><div className="skillbarfill skill80">Good</div></div>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-              </div>
-              <div className="one_fourth">
-                <div className="skill">
-                  <h4>PHP &amp; MySQL</h4>
-                  <div className="skillbar"><div className="skillbarfill skill80">Good</div></div>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-              </div>
-              <div className="one_fourth last_column">
-                <div className="skill">
-                  <h4>WordPress</h4>
-                  <div className="skillbar"><div className="skillbarfill skill90">Excellent</div></div>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-              </div>
-            </div>
-            <div className="section_footer"><a href="#top" className="go_top">Back to top</a></div>
-          </div>
-          {/* End: Section */}
-
-          {/* Start: Section */}
-          <div className="section" id="section4">
-            <h2 className="section_title">Work Experience</h2>
-            <div className="section_content">
-              <div className="job">
-                <div className="one_third">
-                  <h3 className="mt0">Senior Pixel Exploiter</h3>
-                  <h4>Fictive Web Company</h4>
-
-                  <ul className="simple_list mt20">
-                    <li><strong>Period:</strong> January 2008 - Present day</li>
-                    <li><strong>Job type:</strong> Full-Time</li>
-                    <li><strong>References:</strong> Michael Smith</li>
-                  </ul>
-                </div>
-                <div className="two_thirds last_column">
-                  <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.</p>
-                  <ul>
-                    <li>Placerat facer possim assum;</li>
-                    <li>Typi non habent claritatem insitam;</li>
-                    <li>Legere me lius quod ii legunt saepius.</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="ruler"></div>
-
-              <div className="job">
-                <div className="one_third">
-                  <h3 className="mt0">Junior Pixel Exploiter</h3>
-                  <h4>Another Fictive Company</h4>
-
-                  <ul className="simple_list mt20">
-                    <li><strong>Period:</strong> March 2005 - December 2007</li>
-                    <li><strong>Job type:</strong> Full-Time</li>
-                    <li><strong>References:</strong> N/A</li>
-                  </ul>
-                </div>
-                <div className="two_thirds last_column">
-                  <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.</p>
-                  <ul>
-                    <li>Placerat facer possim assum;</li>
-                    <li>Typi non habent claritatem insitam;</li>
-                    <li>Legere me lius quod ii legunt saepius.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="section_footer"><a href="#top" className="go_top">Back to top</a></div>
-          </div>
-          {/* End: Section */}
-
-          {/* Start: Section */}
-          <div className="section" id="section5">
-            <h2 className="section_title">Education</h2>
-            <div className="section_content">
-              <div className="studies">
-                <h3>San Francisco State University</h3>
-                <h4 className="mt10">Bachelor of Arts degree in Conceptual Design. Magna Cum Laude.</h4>
-                <p>Vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-              </div>
-
-              <div className="ruler"></div>
-
-              <div className="studies">
-                <h3>San Francisco School of the Arts</h3>
-              <h4 className="mt10">Class of 1994</h4>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
-              </div>
-            </div>
-            <div className="section_footer"><a href="#top" className="go_top">Back to top</a></div>
-          </div>
-          {/* End: Section */}
-
-          {/* Start: Section */}
-          <div className="section" id="section6">
-            <h2 className="section_title">Portfolio</h2>
-            <div className="section_content">
-              <ul className="portfolio">
-                <li><a href="img/sample-photos/sample-1.jpg" rel="portfolio"><img src="img/sample-photos/sample-1-tb.jpg" alt="" title="" /></a></li>
-                <li><a href="img/sample-photos/sample-2.jpg" rel="portfolio"><img src="img/sample-photos/sample-2-tb.jpg" alt="" title="" /></a></li>
-                <li><a href="img/sample-photos/sample-3.jpg" rel="portfolio"><img src="img/sample-photos/sample-3-tb.jpg" alt="" title="" /></a></li>
-                <li className="last_in_row"><a href="img/sample-photos/sample-4.jpg" rel="portfolio"><img src="img/sample-photos/sample-4-tb.jpg" alt="" title="" /></a></li>
-                <li><a href="img/sample-photos/sample-5.jpg" rel="portfolio"><img src="img/sample-photos/sample-5-tb.jpg" alt="" title="" /></a></li>
-                <li><a href="img/sample-photos/sample-6.jpg" rel="portfolio"><img src="img/sample-photos/sample-6-tb.jpg" alt="" title="" /></a></li>
-                <li><a href="img/sample-photos/sample-7.jpg" rel="portfolio"><img src="img/sample-photos/sample-7-tb.jpg" alt="" title="" /></a></li>
-                <li className="last_in_row"><a href="img/sample-photos/sample-8.jpg" rel="portfolio"><img src="img/sample-photos/sample-8-tb.jpg" alt="" title="" /></a></li>
-              </ul>
-            </div>
-            <div className="section_footer"><a href="#top" className="go_top">Back to top</a></div>
-          </div>
-          {/* End: Section */}
-
-          <div className="clear"></div> {/* Do not remove */}
+          <div className="clear"></div>
         </div>
       </DefaultLayout>
     );
